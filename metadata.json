@@ -1,0 +1,5 @@
+{
+  "name": "HRMS",
+  "description": "A professional Human Resource Management System for managing employee records, tracking daily attendance, and viewing HR analytics dashboard.",
+  "requestFramePermissions": []
+}
