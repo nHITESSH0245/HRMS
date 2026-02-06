@@ -1,6 +1,9 @@
-# HRMS
-Human Resource Management System
+# HRMS - Human Resource Management System
+HRMS Lite is a lightweight, web-based Human Resource Management System designed to handle essential HR operations for a small organization. The application allows an admin to manage employee records and track daily attendance through a simple, clean, and professional interface.
 
+The system focuses on core functionality such as adding and managing employees, marking attendance, and viewing attendance history, while ensuring proper data validation, error handling, and persistent storage. It is built as a full-stack application with a RESTful backend and a responsive frontend connected to a live API.
+
+HRMS Lite is intentionally scoped to remain simple, stable, and realistically usable, avoiding unnecessary complexity while demonstrating end-to-end full-stack development best practices.
 ---
 ## Workflow in Application
 1. visit : https://hrms-lite-vone.vercel.app/
