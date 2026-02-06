@@ -1,16 +1,6 @@
 # HRMS
 Human Resource Management System
 
-This project uses the Gemini API. To run it locally, you must generate and configure your own Gemini API key.
-
----
-
-## Prerequisites
-- Node.js (v18 or later recommended)
-- npm
-- Google account
-- Gemini API key
-
 ---
 ## Workflow in Application
 1. visit : https://hrms-lite-vone.vercel.app/
@@ -23,8 +13,19 @@ This project uses the Gemini API. To run it locally, you must generate and confi
 8. Attendence Tab has option to mark attendence Present/Absent for the employees
 9. Calender view is also there to go to previous dates to check the status
 10. On clicking Full history in Attendence section HR will be able to select particular employee to see their all days attendence with total present days
+    
 ---
+## Note:
+- This project uses the Gemini API. To run it locally, you must generate and configure your own Gemini API key.
+  
+---
+## Prerequisites
+- Node.js (v18 or later recommended)
+- npm
+- Google account
+- Gemini API key
 
+---
 ## Steps to Get a Gemini API Key
 
 1. Open your browser and go to:
@@ -45,7 +46,6 @@ This project uses the Gemini API. To run it locally, you must generate and confi
 7. Copy the API key and store it securely.
 
 ---
-
 ## Steps to Run the Project Locally
 
 1. Open the project folder in **VS Code**.
