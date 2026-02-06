@@ -134,7 +134,7 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete, onBack, them
               <input
                 type="text"
                 className="w-full px-5 py-4 border-2 border-zinc-100 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-white rounded-[1.25rem] focus:border-zinc-900 dark:focus:border-white outline-none transition-all disabled:opacity-50 font-semibold placeholder:text-zinc-300 dark:placeholder:text-zinc-700"
-                placeholder="Sarah Mitchell"
+                placeholder="Hitesh Kumar"
                 disabled={saving}
                 value={formData.adminName}
                 onChange={e => setFormData({ ...formData, adminName: e.target.value })}
@@ -146,7 +146,7 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete, onBack, them
               <input
                 type="text"
                 className="w-full px-5 py-4 border-2 border-zinc-100 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-white rounded-[1.25rem] focus:border-zinc-900 dark:focus:border-white outline-none transition-all disabled:opacity-50 font-semibold placeholder:text-zinc-300 dark:placeholder:text-zinc-700"
-                placeholder="TechFlow Solutions"
+                placeholder="KR Mangalam University"
                 disabled={saving}
                 value={formData.organizationName}
                 onChange={e => setFormData({ ...formData, organizationName: e.target.value })}
@@ -158,7 +158,7 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete, onBack, them
               <input
                 type="text"
                 className="w-full px-5 py-4 border-2 border-zinc-100 dark:border-zinc-800 bg-zinc-50 dark:bg-zinc-950 text-zinc-900 dark:text-white rounded-[1.25rem] focus:border-zinc-900 dark:focus:border-white outline-none transition-all disabled:opacity-50 font-mono font-bold placeholder:text-zinc-300 dark:placeholder:text-zinc-700"
-                placeholder="HR-772-L"
+                placeholder="2201010055"
                 disabled={saving}
                 value={formData.hrId}
                 onChange={e => setFormData({ ...formData, hrId: e.target.value })}
