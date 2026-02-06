@@ -47,11 +47,9 @@ This project uses the Gemini API. To run it locally, you must generate and confi
 
    GEMINI_API_KEY=YOUR_GEMINI_API_KEY
 
-
 4. Start the development server:
    ```
    npm run dev
-
 
 5. Open your browser and visit:
    ```
