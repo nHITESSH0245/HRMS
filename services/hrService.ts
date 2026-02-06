@@ -25,9 +25,6 @@ export class HRService {
 
   // --- Admin Profile Management ---
 
-  /**
-   * Fetches a specific profile by HR ID.
-   */
   static async fetchAdminProfile(hrId: string): Promise<AdminProfile | null> {
     try {
       const docRef = doc(db, COLLECTIONS.PROFILES, hrId);
@@ -42,9 +39,6 @@ export class HRService {
     return null;
   }
 
-  /**
-   * Verifies if a profile exists and if the details match.
-   */
   static async verifyProfileDetails(details: AdminProfile): Promise<'match' | 'mismatch' | 'new'> {
     const existing = await this.fetchAdminProfile(details.hrId);
     if (!existing) return 'new';
@@ -180,15 +174,23 @@ export class HRService {
       this.getAttendanceRecords()
     ]);
     
-    const today = new Date().toISOString().split('T')[0];
+    const today = new Date().toLocaleDateString('en-CA');
     const todayAttendance = attendance.filter(a => a.date === today);
+    
+    // Explicitly count Present and Absent status
     const presentCount = todayAttendance.filter(a => a.status === AttendanceStatus.PRESENT).length;
+    const absentCount = todayAttendance.filter(a => a.status === AttendanceStatus.ABSENT).length;
+    
+    // Calculate how many employees have NO entry for today
+    const pendingCount = Math.max(0, employees.length - (presentCount + absentCount));
+    
     const departments = new Set(employees.map(e => e.department));
 
     return {
       totalEmployees: employees.length,
       presentToday: presentCount,
-      absentToday: Math.max(0, employees.length - presentCount),
+      absentToday: absentCount,
+      pendingToday: pendingCount,
       departmentCount: departments.size
     };
   }

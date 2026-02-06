@@ -25,6 +25,7 @@ export interface DashboardStats {
   totalEmployees: number;
   presentToday: number;
   absentToday: number;
+  pendingToday: number;
   departmentCount: number;
 }
 
