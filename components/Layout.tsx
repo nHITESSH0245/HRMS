@@ -62,7 +62,7 @@ export const Layout: React.FC<LayoutProps> = ({
         <div className="p-6 border-b border-zinc-100 dark:border-zinc-800 flex items-center justify-between">
           <div>
             <h1 className="text-xl font-bold text-zinc-900 dark:text-white">HRMS</h1>
-            <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-1 uppercase tracking-widest font-bold">Cloud Console</p>
+            {/* <p className="text-[10px] text-zinc-400 dark:text-zinc-500 mt-1 uppercase tracking-widest font-bold">Cloud Console</p> */}
           </div>
           {/* Internal Close Button */}
           <button 
