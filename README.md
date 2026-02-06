@@ -12,6 +12,18 @@ This project uses the Gemini API. To run it locally, you must generate and confi
 - Gemini API key
 
 ---
+## Workflow in Application
+1. visit : https://hrms-lite-vone.vercel.app/
+2. Visit landing page and click on Go to dashboard
+3. For the first time user click on Setup workspace and fill all details(HR Id Must be unique for all)
+4. Deploy the workspace
+5. For the repeated user stays on access console and fill information that you fill at time of register
+6. Access the dashboard overview page
+7. Employees Tab has option to add new employees and make edit to employees information
+8. Attendence Tab has option to mark attendence Present/Absent for the employees
+9. Calender view is also there to go to previous dates to check the status
+10. On clicking Full history in Attendence section HR will be able to select particular employee to see their all days attendence with total present days
+---
 
 ## Steps to Get a Gemini API Key
 
