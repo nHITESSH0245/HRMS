@@ -102,23 +102,7 @@ export const Onboarding: React.FC<OnboardingProps> = ({ onComplete, onBack, them
 
         <div className="bg-white dark:bg-zinc-900 rounded-[2.5rem] shadow-2xl shadow-zinc-200/50 dark:shadow-none p-10 border border-zinc-100 dark:border-zinc-800 transition-colors">
           <div className="text-center mb-10">
-            <div className={`inline-block p-5 rounded-3xl mb-6 transition-all duration-500 ${mode === 'setup' ? 'bg-amber-100 dark:bg-amber-900/30 text-amber-600 dark:text-amber-400 rotate-12' : 'bg-zinc-100 dark:bg-zinc-800 text-zinc-900 dark:text-white rotate-0'}`}>
-              {mode === 'setup' ? (
-                /* Rocket Icon for Setup */
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <path d="M4.5 16.5c-1.5 1.26-2 5-2 5s3.74-.5 5-2c.71-.84.71-2.13.09-3.05a3.91 3.91 0 0 0-3.09 0Z"/>
-                  <path d="M18 2s-7 1-10 8c-1.4 3.3 0 6 0 6s2.7 1.4 6 0c7-3 8-10 8-10Z"/>
-                  <path d="M9 12a2 2 0 1 0 4 0 2 2 0 0 0-4 0Z"/>
-                </svg>
-              ) : (
-                /* Key Icon for Login */
-                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round">
-                  <circle cx="7.5" cy="15.5" r="5.5"/>
-                  <path d="m21 2-9.6 9.6"/>
-                  <path d="m15.5 7.5 3 3L22 7l-3-3"/>
-                </svg>
-              )}
-            </div>
+            
             <h1 className="text-3xl font-black text-zinc-900 dark:text-white transition-colors tracking-tight">
               {mode === 'setup' ? 'Create Workspace' : 'Administrator Login'}
             </h1>
